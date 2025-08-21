@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media (prefers-color-scheme: dark) {
+    :root, body {
+        --primary: #583a33;
+        --shadow-primary:#372420;
+        --secondary: #e2d1a9;
+        --shadow-secondary:#aa9d7e;
+        --accent: #bd9c4e;
+        --highlight: #b04b4b;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root, body {
+        --primary: #e2d1a9;
+        --shadow-primary:#aa9d7e;
+        --secondary: #583a33;
+        --shadow-secondary:#372420;
+        --accent: #bd9c4e;
+        --highlight: #625703;
+    }
+}
+
+h1 {
+    color: var(--accent);
+}
+
+h3#subtitle {
+    margin-top: 0%;
+}
+
+:root, body {
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a.project {
+    color: var(--highlight);
+}
+
+p.private-project {
+    color: var(--highlight);
+}
+
+span.private-project {
+    color: var(--accent);
+    font-weight: 100;
+    padding: 2%;
+}
+
+div.project {
+    color: var(--secondary);
+    padding: 2% 5% 5% 5%;
+    margin: 5%;
+    border: 2px solid var(--accent);
+    border-radius: 16px;
+}
+
+div.nav {
+    background-color: var(--shadow-primary);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.gradient {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    padding: 10px;
+}
+
+img.profile {
+    max-width: 50%;
+    border-radius: 32px;
+    padding: 10px;
+}
+
+.embedded-round-corners {
+    margin-top: 2%;
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 16px;
+}
+
+h4.project, p.project {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+li {
+    padding: 10px;
+}
+
+ul.social-cont {
+    list-style: none;
+}
+
+li.social-link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table, tr, td {
+    border: none;
+}
+
+#genres {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.photo-genre-link {
+    font-size: smaller;
+    font-weight: 200;
+    text-align: center;
+    float: left;
+    flex-grow: 4;
+    max-width: 33%;
+    padding: 10px;
+}
