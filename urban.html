@@ -7,19 +7,17 @@
     <link rel="stylesheet" href="custom.css">
     <meta charset="utf-8">
     <title>Mao Rosales</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
+    <script>
+      $(function(){
+        $("#nav-menu").load("nav.html");
+      });
+    </script>
   </head>
   <body>
-    <div class="nav">
-        <ul>
-            <li><a href="https://Sunday206.github.io/index.html">Home</a></li>
-            <li><a href="https://Sunday206.github.io/about.html">About</a></li>
-            <li><a href="https://Sunday206.github.io/landscapes.html">Landscapes</a></li>
-            <li><a href="https://Sunday206.github.io/urban.html">Urban</a></li>
-            <li><a href="https://Sunday206.github.io/portraits.html">Portraits</a></li>
-            <li><a href="https://Sunday206.github.io/film.html">Film</a></li>
-            <li><a href="https://Sunday206.github.io/lifestyle.html">Lifestyle</a></li>
-        </ul>
-    </div>
+    <div id="nav-menu"></div>
     <ul class="photos" id="main">
         <li class="photo-link"><a target="_blank" href="images/urban/DSCF1490.jpg"><img class="photo" src="images/urban/DSCF1490.jpg"/></a></li>
         <li class="photo-link"><a target="_blank" href="images/urban/DSCF1498.jpg"><img class="photo" src="images/urban/DSCF1498.jpg"/></a></li>
