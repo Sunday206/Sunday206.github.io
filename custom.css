@@ -136,7 +136,7 @@ table, tr, td {
 ul.photos {
     display: flex;
     flex-wrap: wrap;
-    margin-top:10%;
+    margin-top: 15%;
     position: absolute;
     left: 0px;
     right: 0px;
@@ -164,8 +164,11 @@ li.photo-link:last-child {
     flex-grow: 10;
 }
 
-img.photo {
+img {
     opacity: 100%;
+}
+
+img.photo {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
@@ -176,7 +179,10 @@ img.photo {
 nav {
     background-color: var(--shadow-primary);
     color: var(--secondary);
-    position: relative;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 nav .logo {
@@ -199,10 +205,10 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 14px 20px;
+    /* padding: 14px 20px; */
     color: var(--secondary);
     text-decoration: none;
-    transition: background 0.3s;
+    /* transition: background 0.3s; */
 }
 
 nav ul li a:hover {
@@ -214,18 +220,19 @@ nav ul li a:hover {
 }
 
 .menu-icon {
-    display: none;
+    display: none !important;
     font-size: 24px;
     padding: 14px 20px;
     cursor: pointer;
     user-select: none;
 }
 
-@media (pointer: none), (pointer: coarse) {
+@media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
         display: none;
         width: 100%;
+        padding-bottom: 10px;
     }
 
     nav ul li a {
@@ -237,7 +244,7 @@ nav ul li a:hover {
     }
 
     .menu-icon {
-        display: inline-block;
+        display: inline-block !important;
     }
 
     ul.photos {
